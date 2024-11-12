@@ -1,0 +1,134 @@
+*{
+    margin: 3px;
+    padding: 2px;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+}
+button.pagina_principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    width: 80px;
+    height: auto;
+    border-radius: 70px;
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+}
+button:hover{/*Interatividade botão pagina principal*/
+    background-color: rgb(37, 37, 81);
+}
+.paginaPrincipal{
+    width: 90%;
+    height: auto;
+    border-radius: 50px;
+    transition: transform 0.5s ease; /*transição suave em segundos*/
+}
+.paginaPrincipal:hover{
+    transform: scale(1.4);
+}
+header{
+    display: flex;  
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    font-family: fantasy;
+    font-size: 40px;
+}
+.catalogo{/*Divisão das grades do catalogo em 4 colunas e 4 linhas*/
+    display: grid;
+    grid-template-areas:
+    "item1 item2 item3 item4"
+    "item5 item6 item7 item8"
+    "item9 item10 item11 item12";
+    grid-gap: 5px;
+    width: 98vw;
+    height: auto;
+}
+/*Define explicitamente a área da grid para cada item, onde n é a posição do item na estrutura HTML.*/
+.medidas-items:nth-child(1) { grid-area: item1; }
+.medidas-items:nth-child(2) { grid-area: item2; }
+.medidas-items:nth-child(3) { grid-area: item3; }
+.medidas-items:nth-child(4) { grid-area: item4; }
+.medidas-items:nth-child(5) { grid-area: item5; }
+.medidas-items:nth-child(6) { grid-area: item6; }
+.medidas-items:nth-child(7) { grid-area: item7; }
+.medidas-items:nth-child(8) { grid-area: item8; }
+.medidas-items:nth-child(9) { grid-area: item9; }
+.medidas-items:nth-child(10) { grid-area: item10; }
+.medidas-items:nth-child(11) { grid-area: item11; }
+.medidas-items:nth-child(12) { grid-area: item12; }
+
+div .medidas-items{
+   border: 1px solid black;
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;  
+}
+.medidas-items img{/*Ordena a imagem a preencher todo espaço a ela destinado*/
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.medidas-items img:hover{/*Acrescenta interatividade a imagem e aumenta a escala em 10%*/
+    transform: scale(1.1);
+}
+.medidas-items .titulo-imagens{
+    position: absolute;
+    color: white;
+    font-size: x-large;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+}
+/*Media Query para dispositivos móveis*/
+@media (max-width: 600px){
+    nav {
+        text-align: right; /* Alinha o conteúdo do <nav> à direita para dispositivos móveis */
+        padding: 10px;
+    }
+
+    .voltar {
+        display: block; /* O link ocupa a largura total */
+        width: 100%;
+        text-align: center;
+        margin: 0 auto 10px auto; /* Centraliza e adiciona margem inferior */
+        font-size: 18px; /* Ajusta o tamanho da fonte */
+    }
+
+    .catalogo {
+        grid-template-columns: repeat(2, 1fr); /* Duas colunas para dispositivos móveis */
+        grid-template-rows: auto;
+        grid-gap: 10px;
+        padding: 10px; /* Adiciona padding ao contêiner */
+    }
+
+    .medidas-items {
+        padding: 10px; /* Ajusta o padding para dispositivos móveis */
+    }
+
+    .medidas-items img {
+        width: 100%; /* A imagem ocupa toda a largura do contêiner */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+
+    .medidas-items .titulo-imagens {
+        font-size: large; /* Ajusta o tamanho da fonte para dispositivos móveis */
+        padding: 5px; /* Ajusta o padding */
+    }
+}
+
+/* Box Model para ajustar o layout na visualização em desktop */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
