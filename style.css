@@ -1,0 +1,68 @@
+*{
+    margin: 4px;
+    padding: 2px;
+    box-sizing: border-box;
+}
+    .tituloprincipal{
+        color: rgb(2, 2, 51);
+        font-size: 25px;
+        margin: 10px;
+        text-align: center;
+       font-weight: bold;
+    }
+    div{
+        text-align: center;
+    }
+   
+    body{
+        background-color: rgb(114, 114, 114);
+    }
+    .voltar{ 
+        /*botão de voltar a pagina principal*/
+        color: rgb(227, 9, 9);
+        text-decoration: underline;
+    }
+    .titulospag{
+        color: blue;
+        font-size: large;
+        text-align: center;
+    }
+
+    h3{
+        text-align: center;
+        font-size: 30px;
+        color: rgb(36, 30, 149);
+        text-decoration: underline;    
+        font-family: "Calligraffitti", cursive;
+    }
+    #sobreNos {
+        color: black;
+        margin: 20px;
+        text-align: center;
+        font-size: larger;
+        font-family: "Josefin Sans", sans-serif;
+    }
+    nav h4{
+        color: rgb(7, 40, 2);
+        font-size: 30px ;
+        margin: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+nav ul li a{
+    color: rgb(13, 43, 1);
+    list-style: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    font-size: x-large;
+    margin: 20px;
+    font-family: "Rye", serif;
+}
+    footer{
+        color: black;
+        font-size: medium;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "Josefin Sans", sans-serif;
+    }
+    
+  
