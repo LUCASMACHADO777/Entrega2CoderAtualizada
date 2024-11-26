@@ -1,0 +1,56 @@
+$primary-color: #7ddf7d;
+$background-gradient: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+$text-color: #3c3a3a;
+
+.button-base{
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: aliceblue;
+    background-color: #3a47d5;
+}
+.paginas1, .paginas2, .paginas3, .paginas4  {
+    @extend .button-base;
+    a {
+      color: inherit; // Mantém a cor do botão no link
+      text-decoration: none;
+    }
+  }
+header{
+    background-color: aqua;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+body{
+    background-color: $primary-color;
+    h1{
+        color: solid black;
+        text-align: center;
+    }
+    .msg{
+        display: flex;
+        justify-content: center;
+       #mensagem{
+        width: 300px;
+        height: 300px;
+       }
+    }
+    #whatsapp {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      
+        a {
+          text-decoration: none;
+          color: #3c3a3a;
+          transition: transform 0.3s ease, color 0.3s ease; // Animação suave para o efeito
+        }
+      
+        a:hover {
+          transform: scale(1.1); // Aumenta o tamanho em 10%
+          color: #007bff;       // Altera a cor ao passar o mouse (opcional)
+        }
+      }  
+}

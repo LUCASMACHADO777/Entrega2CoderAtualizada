@@ -120,6 +120,8 @@ img:hover{
         border-radius: 70px;
     }
     .paginas {
+        display: flex;
+        flex-direction: column;
         font-size: 0.8rem; /* Diminui o tamanho da fonte */
         padding: 5px 10px; /* Ajusta o espaçamento interno para reduzir o tamanho do botão */
         margin: 2px; /* Reduz o espaçamento entre os botões */
